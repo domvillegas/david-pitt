@@ -1,0 +1,266 @@
+/*
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+TABLE OF CONTENTS
+
+SECTION 1 GENERAL STYLES
+--this code styles general elements like html, h5, etc.
+
+SECTION 2 CLASSES
+
+SECTION 3 IDs
+
+SECTION 4 MEDIA QUERIES
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+/* SECTION 1 */
+
+html {
+    height: 100vh;
+}
+
+nav {
+    /* border-bottom: 1px solid rgb(170, 143, 133); */
+    background-color: black;
+    max-width: 1400px !important;
+    margin: auto;
+}
+
+div {
+    background-color: black;
+    color: #E3C598;
+}
+
+h4 {
+    color: rgba(255, 255, 255, 0.89) !important;
+}
+
+h5 {
+    color: rgba(255, 255, 255, 0.89) !important;
+}
+
+p {
+    color: #ffffffaf;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.678) !important;
+}
+
+/* SECTION 2 CLASSES */
+
+.link-hover {
+    color: rgba(255, 255, 255, 0.479) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+}
+
+.link-hover:hover {
+    text-decoration: none;
+    color: white !important;
+    border-bottom: 1px solid white;
+}
+
+.work-link-hover {
+    color: rgba(255, 255, 255, 0.952) !important;
+}
+
+.work-link-hover:hover {
+    text-decoration: none;
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+
+.minus-bullet {
+    margin-left: 60px;
+    list-style: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* SECTION 3 IDs */
+
+#navbar-brand {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+#toggler-icon {
+    /* transition: 0.3s; */
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(999, 999, 999)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#preload {
+    display: none;
+}
+
+/* #homepage-image {
+    position: relative;
+    top: auto;
+    right: auto;
+} */
+
+#large-image {
+    background-repeat: none;
+    background-size: cover;
+    background-color: none !important;
+}
+
+#headshot {
+    margin: 0px !important;
+}
+
+#painting-credit {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+#download-cv-link {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#contact-content {
+    max-width: 1400px !important;
+}
+
+#about-content {
+    max-width: 1400px !important;
+}
+
+/* SECTION 4 MEDIA QUERIES */
+
+@media screen and (max-width: 767px) {
+
+    #about-content {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        padding-bottom: 20px !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    body {
+        padding-top: 140px !important;
+    }
+
+    #navbar-brand {
+        font-size: 60px;
+        font-weight: 200;
+        padding-top: 1vh;
+        padding-left: 40px;
+    }
+
+    #navbarNav {
+        padding-top: 1vh;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+
+    body {
+        padding-top: 190px !important;
+    }
+
+    #navbar-brand {
+        font-size: 80px;
+        font-weight: 300;
+        padding-top: 40px;
+    }
+
+    #navbarNav {
+        font-size: 30px;
+        padding-top: 2vh;
+        padding-right: 40px;
+    }
+
+    #navbar-contact-me > #navbarNav {
+        padding-right: 120px;
+    }
+
+    #navbar-contact-me > #navbar-brand {
+        padding-left: 160px;
+    }
+
+    #homepage-image {
+        width: 800px !important;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .cv-rows {
+        width: 900px;
+        position: relative; 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #painting-credit {
+        margin-top: 6px;
+        font-size: 11px;
+    }
+  }
+
+  /* list styling for chrome */
+
+  @media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    p > li {
+        margin-left: 60px;
+    }
+    
+    li > span {
+        margin-left: -12px;
+    }
+}
+
+  /* list styling for safari */
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    p > li {
+        margin-left: 60px;
+    }
+    
+    li > span {
+        margin-left: -5px;
+    }
+}}
+
+  /* list styling for firefox */
+
+@-moz-document url-prefix() {
+    p > li {
+        margin-left: 60px;
+    }
+    
+    li > span {
+        margin-left: -5px;
+    }
+  }
+
+    /* list styling for opera */
+
+  @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+    p > li {
+        margin-left: 60px;
+    }
+    
+    li > span {
+        margin-left: -5px;
+    }
+}

@@ -1,0 +1,5 @@
+opera and chrome are fine
+
+firefox needs to align the dots and lessen the spacing between the text and the dots
+
+safari needs a slight spacing adjustment between the dots and the text
